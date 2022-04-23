@@ -35,17 +35,17 @@ public class Triangle {
 
     public String checkType(int slide1, int slide2, int slide3){
         if(!checkValid(slide1, slide2, slide3))
-            return " Invalid";
+            return "Invalid";
 
         if(slide1 + slide2 <= slide3 || slide2 + slide3 <= slide1 || slide3 + slide1 <= slide2)
             return "Cannot Form";
 
-        if(slide1 == slide2 || slide2 == slide3)
-            return "EqualTriangle";
+        if(slide1 == slide2 && slide2 == slide3)
+            return "Equal";
         else if((slide1 == slide2 || slide1 == slide3 || slide2 == slide3) && (checkRightAngle(slide1, slide2, slide3)))
-            return "IsoscelesRt";
+            return "IsoRt";
         else if(slide1 == slide2 || slide1 == slide3 || slide2 == slide3)
-            return "Isosceles";
+            return "Iso";
         else if(checkRightAngle(slide1, slide2, slide3))
             return "Rt";
         else

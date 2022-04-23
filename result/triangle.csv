@@ -1,0 +1,16 @@
+id,a,b,c,expectedOutput,actualOutput,pass
+1,1,50,49,Cannot Form,Cannot Form,True
+2,5,40,40,Iso,Iso,True
+3,50,50,50,Equal,Equal,True
+4,96,48,60,Normal,Normal,True
+5,99,52,54,Normal,Normal,True
+6,47,1,46,Cannot Form,Cannot Form,True
+7,63,16,65,Rt,Rt,True
+8,61,97,50,Normal,Normal,True
+9,58,99,48,Normal,Normal,True
+10,55,56,1,Cannot Form,Cannot Form,True
+11,49,61,7,Cannot Form,Cannot Form,True
+12,66,44,90,Normal,Normal,True
+13,50,52,99,Normal,Normal,True
+14,-1,0,10,Invalid,Invalid,True
+15,120,30,60,Invalid,Invalid,True
